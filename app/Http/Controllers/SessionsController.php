@@ -12,13 +12,12 @@ class SessionsController extends Controller
     }
 
     public function store() {
-        if (auth()->attempt(request(['email','password'])) ) {
-         //  return back()->withErrors([
-          //     'message' => 'el email o contraseña es incorrecta',
-         //   ]);
-            return redirect()->to('/');
+        if (auth()->attempt(request(['email','password'])) == false) {
+           return back()->withErrors([
+              'message' => 'el email o contraseña es incorrecta'
+          ]);
         }
-        //return redirect()->to('/');
+        return redirect()->to('/');
     }
 
     public function destroy() {

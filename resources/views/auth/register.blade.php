@@ -19,6 +19,7 @@
         <label for="exampleInputPassword1" class="form-label">Contraseña</label>
         <input type="password" class="form-control" id="password" name="password">
 
+
         <div class="mb-3 ">
         <label for="exampleInputPassword1" class="form-label">Confirmar Contraseña</label>
         <input type="password" class="form-control" id="password_confirm" name="password_confirm">

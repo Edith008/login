@@ -18,6 +18,10 @@
         <input type="password" class="form-control" id="password" name="password">
         </div>
 
+        @error('message')
+        <p class="alert alert-danger">*ERROR</p>
+        @enderror
+
         <button type="submit" class="btn btn-primary">Iniciar</button>
         
     </form>
